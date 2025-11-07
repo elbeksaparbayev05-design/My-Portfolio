@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Geist+Mono:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.section{
+    text-decoration: none;
+    color: black;
+}
+.section:hover{
+    transform: rotateX('angle');
+}
+.material-symbols-outlined{
+    padding: 5px;
+}
+@media (max-width: 490px) {
+    .nav-bar{
+        display: block;
+        gap: 10px;
+        height: 20px;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        margin-left: 20%;
+    }
+    .section{
+        text-decoration: none;
+        color: black;   
+        font-size: 8px;
+    }
+    .header__logo{
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+}
