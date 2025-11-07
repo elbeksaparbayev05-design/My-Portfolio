@@ -17,7 +17,7 @@
 @media (max-width: 490px) {
     .nav-bar{
         display: block;
-        gap: 10px;
+        gap: 5px;
         height: 20px;
         background-color: white;
         justify-content: center;
