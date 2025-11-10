@@ -63,6 +63,9 @@
 }
 /* main */
 .rasm{
+    width: 350px;
+    height: 496.66px;
+    border-radius: 150px; 
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     box-shadow: 0 0 20px #8f3219;
 }
@@ -90,17 +93,143 @@
 .a__tegi{
     color: white;
 }
-@media screen and (max-width:768px) {
-@import url('https://fonts.googleapis.com/css2?family=Carme&family=Geist+Mono:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&');
-    *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+.hovli{
+    border-bottom: 3px solid #E2552D; 
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    position: relative;
+    left: 45%;
+}
+.section_1{
+    height:100vh; 
+    width: 218vh; 
+    background-color: black; 
+    padding: 20vh;
+}
+.section_1__container{
+    display: flex;
+    gap: 150px;
+    align-items: center;
+}
+.salom_ota{
+    display: flex;
+    justify-content: center;
+}
+.salom{
+    color: white;
+    font-size: 40px; 
+    display: flex;
+    gap: 5px;
+}
+.udov{
+    color: #E2552D;
+}
+.Mening{
+    color: #E2552D; 
+    font-size: 50px;
+   }
+   .Bu{
+    color: white;
+    font-size: 25px;
+   }
+   /* 2-section */
+   .section_2{
+    height: 100vh; 
+    width: 228vh;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: start; 
+   }
+   .Haqimda{
+    display: flex;
+    border-bottom: 3px solid #E2552D; 
+    width: 330px;
+    position: relative;
+    left: 35%; 
+   }
+   .men_haqimda{
+    font-size: 50px; 
+    color: #E2552D; 
+    text-shadow: 0 0 20px #E2552D;}
+    .bilim{
+        width:150vh; 
+        height: 200px;
+        border-radius: 20px; 
+        padding: 30px; 
+        margin-top: 50px; 
     }
-    .yozuv__meningSaytim{
-        width: 600vh;
+    .text{
+        color: white;
+        font-size: 20px;
     }
+    /* 3-section */
+    .section_3{
+        height: 100vh; 
+        width: 218vh;
+        background-color: black; 
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+    /* 4-section */
+    .section_4{
+        height: 100vh; 
+        width: 218vh; 
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; 
+        margin-bottom: 100px; 
+        padding: 20vh;
+    }
+    .project{
+        display: flex; 
+        gap: 100px;
+    }
+/* telefon uchun */
+@media (max-width:758px) {
+    /* logatip elbek */
+   .UY{
+    display: none;
+   }
+   .hovli{
+    display: none;
+   }
+   .section_1{
+    height: 280vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+
+    /* flex-direction: column; */
+   }
+   .section_1__container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50vh;
+   }
+   .salom{
+    font-size: 80px;
+   }
+   .Mening{
+    font-size: 77px;
+   }
+   .Bu{
+    font-size: 80px;
+   }
+   .section_2{
+    /* height: 200vh; */
+    /* width: 218vh;sss */
+    /* background-color: white; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+   }
+    /* navbar settings */
     .nav{
         display: none;
     }
@@ -111,15 +240,40 @@
         border-radius: 80px;   
         padding: 10px; 
     }
+    .navbar-container{
+        background-color: black;
+    }
     .ism{
         margin-left: 50px;
     }
     .position__container{
-        background-color: black;
+        /* background-color: black; */
         top: 0;
-        width: 1000px;
+        width: 192vh;
+        /* background-color: white; */
     }
+    /* rasmlar settings */
+    .rasm{
+        width: 800px;
+        height: 1100px;
+    }
+    /* 2-section */
     .section_2{
-        font-display: none;
+        width: 192vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section_3{
+        height: 200vh;
+    }
+    /* 4-section */
+    .section_4{
+        height: 200vh;
+    }
+    .project{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
     }
 }
