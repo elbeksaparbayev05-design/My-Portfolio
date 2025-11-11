@@ -37,7 +37,8 @@
 .logo-container:hover{
     box-shadow: 0 0 20px #E2552D;
     transform: scale(1.03);
-    transition: transform 0.5s ;
+    /* transition: transform 0.5s ; */
+
 }
 .ism{
     margin-left: 20px;
@@ -56,10 +57,19 @@
     font-size: 30px;
     margin-top: 25px;
 }
-.section{
+.nav_link{
     text-decoration: none;
     color: #E2552D;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nav_link.active {
+    background-color: black;
+    border: 2px solid #E2552D;
+    box-shadow: 0 0 25px #E2552D;
+    height: 50px;
+    border-radius: 20px;
+    padding: 5px;
+    transition: transform 0.5s ease, box-shadow 0.4s ease;
+    /* transform: scale(1.07); */
 }
 /* main */
 .rasm{
@@ -101,6 +111,11 @@
     position: relative;
     left: 45%;
 }
+.UY{
+    color: #E2552D; 
+    font-size: 50px;
+    text-shadow:0 0 25px #E2552D;
+}
 .section_1{
     height:100vh; 
     width: 218vh; 
@@ -135,12 +150,12 @@
    }
    /* 2-section */
    .section_2{
-    height: 100vh; 
-    width: 228vh;
-    /* background-color: white; */
-    display: flex;
-    align-items: center;
-    justify-content: start; 
+      height: 100vh; 
+      width: 218vh;
+      background-color: black; 
+      display: flex; 
+      align-items: center;
+      justify-content: center;
    }
    .Haqimda{
     display: flex;
@@ -173,7 +188,15 @@
         align-items: center;
         justify-content: center;
     }
-    /* 4-section */
+    .mening__bilim{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+     .otalar{
+        display: flex;
+        gap: 80px;
+     }
+     /* 4-section */
     .section_4{
         height: 100vh; 
         width: 218vh; 
@@ -189,21 +212,45 @@
         display: flex; 
         gap: 100px;
     }
+    .mening__bilim{
+        display: flex;
+        gap: 80px;
+    }
+    .Bilimim_yozuvi{
+        border-bottom: 3px solid #E2552D;
+        width: 200px;
+        display: flex;
+        justify-content:center; 
+        position: relative;
+        left: 42.8%;
+    }
+    @keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.section_1 {
+  animation: fadeIn 2s ease-in;
+  animation-direction: alternate;
+}
+
+
 /* telefon uchun */
 @media (max-width:758px) {
     /* logatip elbek */
    .UY{
-    display: none;
+    font-size: 80px;
    }
    .hovli{
-    display: none;
+    margin-bottom: -30vh;
    }
    .section_1{
-    height: 280vh;
+    height: 350vh;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     background-color: black;
     justify-content: center;
+    flex-direction: column;
 
     /* flex-direction: column; */
    }
@@ -220,14 +267,6 @@
    }
    .Bu{
     font-size: 80px;
-   }
-   .section_2{
-    /* height: 200vh; */
-    /* width: 218vh;sss */
-    /* background-color: white; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
    }
     /* navbar settings */
     .nav{
@@ -249,23 +288,50 @@
     .position__container{
         /* background-color: black; */
         top: 0;
-        width: 192vh;
+        width: 218vh;
         /* background-color: white; */
     }
     /* rasmlar settings */
     .rasm{
-        width: 800px;
-        height: 1100px;
+        width: 900px;
+        height: 1300px;
     }
     /* 2-section */
     .section_2{
-        width: 192vh;
+        width: 218vh;
+        height: 300vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: black;
     }
+    .Haqimda{
+        width: 530px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 25%;     
+    }
+    .men_haqimda{
+        font-size: 80px;
+    }
+    .bilim{
+        height: 1000px;
+    }
+    .text{
+        font-size: 60px;
+    }
+    /*3-section */
     .section_3{
         height: 200vh;
+    }
+    .mening__bilim{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .otalar{
+        display: flex;
+        flex-wrap: wrap;
     }
     /* 4-section */
     .section_4{
